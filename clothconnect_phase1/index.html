@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClothConnect | Clothing Marketplace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" data-view="home"><span class="brand-mark">C</span> ClothConnect</a>
+    <nav class="main-nav">
+      <a href="#" data-view="home">Home</a>
+      <a href="#" data-view="shop">Shop</a>
+      <a href="#" data-view="about">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="wishlistButton" aria-label="Wishlist">♡ <span id="wishlistCount">0</span></button>
+      <button class="icon-button" id="cartButton" aria-label="Cart">Bag <span id="cartCount">0</span></button>
+      <select id="roleSwitcher" aria-label="Demo user role">
+        <option value="customer">Customer view</option>
+        <option value="producer">Brand portal</option>
+        <option value="admin">Admin portal</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="app">
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A marketplace for independent clothing brands</p>
+        <h1>Wear your style.<br><em>Support real brands.</em></h1>
+        <p class="hero-description">Discover clothing from emerging brands, all in one place. Find your next favourite look.</p>
+        <button class="primary-button" data-view="shop">Explore collection <span>→</span></button>
+      </div>
+      <div class="hero-image" role="img" aria-label="Fashion editorial clothing collection"></div>
+    </section>
+
+    <section class="section category-section" id="categories">
+      <div class="section-heading">
+        <div><p class="eyebrow">Find your fit</p><h2>Shop by category</h2></div>
+        <a href="#" data-view="shop" class="text-link">View all products →</a>
+      </div>
+      <div class="category-grid">
+        <button class="category-tile men" data-category="Men's Wear"><span>Men's Wear</span></button>
+        <button class="category-tile women" data-category="Women's Wear"><span>Women's Wear</span></button>
+        <button class="category-tile kids" data-category="Kids' Wear"><span>Kids' Wear</span></button>
+        <button class="category-tile ethnic" data-category="Ethnic Wear"><span>Ethnic Wear</span></button>
+      </div>
+    </section>
+
+    <section class="section featured-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Selected for you</p><h2>Featured pieces</h2></div>
+        <a href="#" data-view="shop" class="text-link">Shop collection →</a>
+      </div>
+      <div class="product-grid" id="featuredProducts"></div>
+    </section>
+
+    <section class="brand-cta">
+      <div><p class="eyebrow">Have a clothing brand?</p><h2>Bring your brand to ClothConnect.</h2><p>Apply to become a seller and reach customers looking for something different.</p></div>
+      <button class="light-button" id="applyBrandButton">Apply as a brand →</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#" data-view="home"><span class="brand-mark">C</span> ClothConnect</a>
+    <p>Independent clothing brands. One place to discover them.</p>
+    <small>© 2026 ClothConnect · Student project prototype</small>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
